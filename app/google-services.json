@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106502856555",
+    "firebase_url": "https://rummytracker.firebaseio.com",
+    "project_id": "rummytracker",
+    "storage_bucket": "rummytracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106502856555:android:cae02c72fbb47335d6f62e",
+        "android_client_info": {
+          "package_name": "com.example.rummytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106502856555-n1e59ico6c3bngarj06clmli419ompc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnoCtRhOUKYzzfyxAX0TPSMlyVHEI9AHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106502856555-n1e59ico6c3bngarj06clmli419ompc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

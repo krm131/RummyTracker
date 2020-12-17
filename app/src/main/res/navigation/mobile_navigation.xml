@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rummytracker.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.rummytracker.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.rummytracker.ui.account.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login"/>
+
+    <fragment
+        android:id="@+id/nav_new_game"
+        android:name="com.example.rummytracker.ui.game.NewGameFragment"
+        android:label="New Game"
+        tools:layout="@layout/fragment_new_game" />
+</navigation>

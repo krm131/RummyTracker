@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_gravity="end"
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout_button" />
+
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/account_text_games_won"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="8dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/account_text_games_played"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/account_text_highest_win_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/account_text_average_ppg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/account_text_average_ppt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="8dp"
+        android:textAlignment="center"/>
+
+
+
+</LinearLayout>

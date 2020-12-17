@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/round_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="25dp"
+        android:layout_weight=".75"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <!-- <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/active_game_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="25dp"
+        android:layout_weight=".75"
+        android:clickable="true"
+        android:focusableInTouchMode="true"/> -->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/active_player_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="25dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusableInTouchMode="true"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/active_player_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="25dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusableInTouchMode="true"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/active_player_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="25dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusableInTouchMode="true"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/active_player_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="25dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusableInTouchMode="true"/>
+
+    <Button
+        android:id="@+id/end_round_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="@string/end_round" />
+
+</LinearLayout>
