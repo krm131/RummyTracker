@@ -48,7 +48,7 @@ public class WinnerDialogFragment extends DialogFragment {
             player3View.setVisibility(View.INVISIBLE);
         }
         if(playerScoreList.size() > 3){
-            player3View.setText(playerScoreList.get(3).getName() + ": " + playerScoreList.get(3).getScore());
+            player4View.setText(playerScoreList.get(3).getName() + ": " + playerScoreList.get(3).getScore());
         }else{
             player4View.setVisibility(View.INVISIBLE);
         }
