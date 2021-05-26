@@ -21,9 +21,12 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.rummytracker.R;
 import com.example.rummytracker.ui.game.Player;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-public class ActiveGameFragmentActivity extends FragmentActivity {
+public class ActiveGameFragmentActivity extends FragmentActivity{
     ActiveGameViewModel activeGameViewModel;
     Button endRoundButton;
     TextView roundNumberView;
@@ -109,6 +112,20 @@ public class ActiveGameFragmentActivity extends FragmentActivity {
         }else {
             args.putString("winner name", players.get(winIndex).getName());
         }
+
+        ArrayList<PlayerScorePair> playerScoreList = new ArrayList<>(scores.length);
+        PlayerScorePair tempPlayer;
+        for(int i = 0; i < scores.length; i++){
+            if(players.get(winIndex).isGuest()){
+                tempPlayer = new PlayerScorePair(players.get(i).getUsername(), scores[i]);
+            }else {
+                tempPlayer = new PlayerScorePair(players.get(i).getName(), scores[i]);
+            }
+            playerScoreList.add(tempPlayer);
+        }
+        Collections.sort(playerScoreList, Collections.reverseOrder());
+        args.putParcelableArrayList("playerScoreList", playerScoreList);
+
         DialogFragment winnerDialog = new WinnerDialogFragment(this);
         winnerDialog.setArguments(args);
         winnerDialog.show(getSupportFragmentManager(), "winnerDialog");
